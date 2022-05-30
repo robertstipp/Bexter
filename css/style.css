@@ -20,12 +20,55 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #54483a; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #808c54; }
+
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--light {
     color: #f9f7f6; }
   .heading-4--dark {
     color: #54483a; }
+
+.btn {
+  background-color: #808c54;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.8rem 3rem;
+  text-transform: uppercase;
+  transition: all 0.2s; }
+  .btn:hover {
+    background-color: #697536; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
 
 .sidebar {
   background-color: #808c54;
@@ -37,7 +80,7 @@ body {
   grid-column: full-start / col-end 6; }
 
 .realtors {
-  background-color: #7c8c42;
+  background-color: #697536;
   grid-column: col-start 7 / full-end; }
 
 .features {
@@ -67,10 +110,20 @@ body {
   grid-column: full-start / col-end 4; }
 
 .story__content {
-  grid-column: col-start 5 / full-end; }
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: flex-start; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem; }
 
 .homes {
-  background-color: #7c8c42;
+  background-color: #697536;
   grid-column: center-start / center-end; }
 
 .gallery {
