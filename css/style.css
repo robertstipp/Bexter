@@ -143,6 +143,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 7rem; }
 
+.home {
+  background-color: #f9f7f6; }
+  .home__location svg, .home__area svg, .home__rooms svg, .home__price svg {
+    fill: #808c54;
+    height: 2rem;
+    width: 2rem; }
+
 .gallery {
   background-color: #54483a;
   grid-column: full-start / full-end; }
