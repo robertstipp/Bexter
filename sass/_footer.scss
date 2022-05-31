@@ -23,6 +23,20 @@
     padding: 1.5rem;
     display: block;
     text-decoration: none;
-    background-color: rgba(#fff, 0.05);
+    transition: all 0.2s;
   }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  color: $color-grey-light-1;
+  font-size: 1.4rem;
+  margin: 6rem auto 0 auto;
+  width: 80%;
+  text-align: center;
 }
