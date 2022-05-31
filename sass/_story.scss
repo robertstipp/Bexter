@@ -6,6 +6,13 @@
       ),
       url(../img/back.jpg);
     grid-column: full-start / col-end 4;
+    align-items: center;
+    background-size: cover;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      padding: 3rem;
+    }
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -16,16 +23,31 @@
     width: 100%;
     grid-area: 2 / 2 / 6 / 6;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1;
+    }
   }
   &__img--2 {
     width: 115%;
     grid-area: 4 / 4 / 6 / 7;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
     z-index: 20;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      grid-row: 1 / -1;
+    }
   }
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      grid-row: 5/6;
+    }
     padding: 6rem 8vw;
 
     display: grid;
